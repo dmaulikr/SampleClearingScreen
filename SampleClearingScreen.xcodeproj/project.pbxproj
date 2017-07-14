@@ -12,6 +12,7 @@
 		AC152BB71F155F3B00E1F06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC152BB61F155F3B00E1F06C /* Assets.xcassets */; };
 		AC152BBA1F155F3B00E1F06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC152BB81F155F3B00E1F06C /* Main.storyboard */; };
 		AC152BC51F155F3B00E1F06C /* SampleClearingScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC152BC41F155F3B00E1F06C /* SampleClearingScreenTests.swift */; };
+		AC152BD01F15604200E1F06C /* CreateMetalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC152BCF1F15604200E1F06C /* CreateMetalClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		AC152BC01F155F3B00E1F06C /* SampleClearingScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleClearingScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC152BC41F155F3B00E1F06C /* SampleClearingScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleClearingScreenTests.swift; sourceTree = "<group>"; };
 		AC152BC61F155F3B00E1F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC152BCF1F15604200E1F06C /* CreateMetalClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMetalClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				AC152BB21F155F3B00E1F06C /* AppDelegate.swift */,
 				AC152BB41F155F3B00E1F06C /* ViewController.swift */,
+				AC152BCF1F15604200E1F06C /* CreateMetalClass.swift */,
 				AC152BB61F155F3B00E1F06C /* Assets.xcassets */,
 				AC152BB81F155F3B00E1F06C /* Main.storyboard */,
 				AC152BBB1F155F3B00E1F06C /* Info.plist */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC152BB51F155F3B00E1F06C /* ViewController.swift in Sources */,
+				AC152BD01F15604200E1F06C /* CreateMetalClass.swift in Sources */,
 				AC152BB31F155F3B00E1F06C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

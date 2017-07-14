@@ -12,7 +12,7 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Swift.print("Hello Metal");
         // Do any additional setup after loading the view.
     }
 
