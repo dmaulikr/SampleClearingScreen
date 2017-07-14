@@ -69,6 +69,16 @@
 			name = MetalOther;
 			sourceTree = "<group>";
 		};
+		AC076AE21F18DBFA00707367 /* CreatingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AC152BCF1F15604200E1F06C /* CreateMetalClass.swift */,
+				AC076ADE1F18A73D00707367 /* Renderer.swift */,
+				AC076AE01F18B4F300707367 /* Shader.metal */,
+			);
+			name = CreatingScreen;
+			sourceTree = "<group>";
+		};
 		AC152BA61F155F3A00E1F06C = {
 			isa = PBXGroup;
 			children = (
@@ -90,9 +100,7 @@
 		AC152BB11F155F3B00E1F06C /* SampleClearingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AC152BCF1F15604200E1F06C /* CreateMetalClass.swift */,
-				AC076ADE1F18A73D00707367 /* Renderer.swift */,
-				AC076AE01F18B4F300707367 /* Shader.metal */,
+				AC076AE21F18DBFA00707367 /* CreatingScreen */,
 				AC076ADD1F18A3D200707367 /* MetalOther */,
 			);
 			path = SampleClearingScreen;
