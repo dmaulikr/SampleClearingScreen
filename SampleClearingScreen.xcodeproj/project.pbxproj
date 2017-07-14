@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC076ADF1F18A73D00707367 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC076ADE1F18A73D00707367 /* Renderer.swift */; };
+		AC076AE11F18B4F300707367 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = AC076AE01F18B4F300707367 /* Shader.metal */; };
 		AC152BB31F155F3B00E1F06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC152BB21F155F3B00E1F06C /* AppDelegate.swift */; };
-		AC152BB51F155F3B00E1F06C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC152BB41F155F3B00E1F06C /* ViewController.swift */; };
 		AC152BB71F155F3B00E1F06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC152BB61F155F3B00E1F06C /* Assets.xcassets */; };
 		AC152BBA1F155F3B00E1F06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC152BB81F155F3B00E1F06C /* Main.storyboard */; };
 		AC152BC51F155F3B00E1F06C /* SampleClearingScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC152BC41F155F3B00E1F06C /* SampleClearingScreenTests.swift */; };
@@ -26,9 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC076ADE1F18A73D00707367 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		AC076AE01F18B4F300707367 /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 		AC152BAF1F155F3B00E1F06C /* SampleClearingScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleClearingScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC152BB21F155F3B00E1F06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC152BB41F155F3B00E1F06C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC152BB61F155F3B00E1F06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC152BB91F155F3B00E1F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC152BBB1F155F3B00E1F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC076ADD1F18A3D200707367 /* MetalOther */ = {
+			isa = PBXGroup;
+			children = (
+				AC152BB21F155F3B00E1F06C /* AppDelegate.swift */,
+				AC152BB61F155F3B00E1F06C /* Assets.xcassets */,
+				AC152BB81F155F3B00E1F06C /* Main.storyboard */,
+				AC152BBB1F155F3B00E1F06C /* Info.plist */,
+			);
+			name = MetalOther;
+			sourceTree = "<group>";
+		};
 		AC152BA61F155F3A00E1F06C = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +90,10 @@
 		AC152BB11F155F3B00E1F06C /* SampleClearingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AC152BB21F155F3B00E1F06C /* AppDelegate.swift */,
-				AC152BB41F155F3B00E1F06C /* ViewController.swift */,
 				AC152BCF1F15604200E1F06C /* CreateMetalClass.swift */,
-				AC152BB61F155F3B00E1F06C /* Assets.xcassets */,
-				AC152BB81F155F3B00E1F06C /* Main.storyboard */,
-				AC152BBB1F155F3B00E1F06C /* Info.plist */,
+				AC076ADE1F18A73D00707367 /* Renderer.swift */,
+				AC076AE01F18B4F300707367 /* Shader.metal */,
+				AC076ADD1F18A3D200707367 /* MetalOther */,
 			);
 			path = SampleClearingScreen;
 			sourceTree = "<group>";
@@ -198,8 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC152BB51F155F3B00E1F06C /* ViewController.swift in Sources */,
+				AC076AE11F18B4F300707367 /* Shader.metal in Sources */,
 				AC152BD01F15604200E1F06C /* CreateMetalClass.swift in Sources */,
+				AC076ADF1F18A73D00707367 /* Renderer.swift in Sources */,
 				AC152BB31F155F3B00E1F06C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +411,7 @@
 				AC152BCB1F155F3B00E1F06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC152BCC1F155F3B00E1F06C /* Build configuration list for PBXNativeTarget "SampleClearingScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +420,7 @@
 				AC152BCE1F155F3B00E1F06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

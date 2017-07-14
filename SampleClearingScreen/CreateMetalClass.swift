@@ -9,11 +9,20 @@
 import MetalKit
 
 class CreateMetalClass: MTKView {
-
-    override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-
-        // Drawing code here.
+    
+    var renderer : Renderer!
+    
+    required init(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        self.device = MTLCreateSystemDefaultDevice() //create gpu device one time only(view)
+        self.colorPixelFormat = .bgra8Unorm          //declare pixel format
+        self.clearColor = MTLClearColor(red: 1.55, green: 0.99, blue: 0.30, alpha: 1)
+        
+        renderer = Renderer(device: device!)
+        
+        self.delegate = renderer
     }
+
     
 }
